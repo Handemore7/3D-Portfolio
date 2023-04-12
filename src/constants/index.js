@@ -14,15 +14,15 @@ import {
     mongodb,
     git,
     figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
     carrent,
     jobit,
     tripguide,
     threejs,
+    photoshop,
+    premiere,
+    qentaz,
+    agm,
+    agency
   } from "../assets";
   
   export const navLinks = [
@@ -107,6 +107,14 @@ import {
     {
       name: "figma",
       icon: figma,
+    },
+    {
+      name: 'photoshop',
+      icon: photoshop
+    },
+    {
+      name: 'premiere',
+      icon: premiere
     }
   ];
   
@@ -114,7 +122,7 @@ import {
     {
       title: "Software developer",
       company_name: "Qentaz",
-      icon: tesla,
+      icon: qentaz,
       iconBg: "#E6DEDD",
       date: "Dec 2021 - May 2022",
       points: [
@@ -127,7 +135,7 @@ import {
     {
       title: "React templates developer",
       company_name: "Web design Agency Cali",
-      icon: shopify,
+      icon: agency,
       iconBg: "#383E56",
       date: "Feb 2022 - Aug 2022",
       points: [
@@ -139,7 +147,7 @@ import {
     {
       title: "FullStack Developer",
       company_name: "Agriglobal Market",
-      icon: starbucks,
+      icon: agm,
       iconBg: "#383E56",
       date: "Aug 2022 - Feb 2023",
       points: [
