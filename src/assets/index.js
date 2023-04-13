@@ -28,9 +28,7 @@ import agm from "./company/AGM.png";
 import qentaz from "./company/Qentaz.png";
 import agency from './company/agency.png'
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import openai from './openaiProject.jpg'
 
 export {
   logo,
@@ -56,11 +54,9 @@ export {
   threejs,
   agm,
   qentaz,
-  carrent,
-  jobit,
-  tripguide,
   premiere,
   afterEffects,
   photoshop,
-  agency
+  agency,
+  openai
 };
