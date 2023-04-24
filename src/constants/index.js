@@ -20,7 +20,9 @@ import {
     qentaz,
     agm,
     agency,
-    openai
+    openai,
+    ecommerceTemplate,
+    quire
   } from "../assets";
   
   export const navLinks = [
@@ -42,18 +44,22 @@ import {
     {
       title: "Web Developer",
       icon: web,
+      reference: "https://github.com/Handemore7/"
     },
     {
       title: "UI / UX Designer",
       icon: mobile,
+      reference: "https://www.behance.net/handemore74403"
     },
     {
       title: "Data analyst",
       icon: backend,
+      reference: ''
     },
     {
-      title: "Content Creator",
+      title: "Content Creator (editor)",
       icon: creator,
+      reference: "https://www.youtube.com/@blurelle"
     },
   ];
   
@@ -179,6 +185,50 @@ import {
       image: openai,
       source_code_link: "https://github.com/Handemore7/AiGenerateApp",
       project_link: "https://createimagesai.netlify.app"
+    },
+    {
+      name: "E-commerce templates",
+      description:
+        "I made various types of templates for E-commerce projects, including payment, shopping cart and product detail",
+      tags: [
+        {
+          name: "Next.js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Sanity",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Stripe",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: ecommerceTemplate,
+      source_code_link: "https://github.com/Handemore7/Ecommerce_Sanity-stripe",
+      project_link: "https://ecommerce-tienda-7537axpgt-handemore7.vercel.app/"
+    },
+    {
+      name: "Quire",
+      description:
+        "This was a project that I made with my partner Michelle Fernandez as thesis for the university, we created a web app that stimates the UX resources needed in a project.",
+      tags: [
+        {
+          name: "JavaScript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "AI",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Sort Algorithm",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: quire,
+      source_code_link: "https://github.com/Handemore7/PDG",
+      project_link: "https://handemore7.github.io/PDG/index.html"
     },
   ];
   

@@ -29,6 +29,8 @@ import qentaz from "./company/Qentaz.png";
 import agency from './company/agency.png'
 
 import openai from './openaiProject.jpg'
+import quire from './Quire.jpg'
+import ecommerceTemplate from './EcommerceTemplate.jpg'
 
 export {
   logo,
@@ -58,5 +60,7 @@ export {
   afterEffects,
   photoshop,
   agency,
-  openai
+  openai,
+  ecommerceTemplate,
+  quire
 };
