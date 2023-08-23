@@ -27,6 +27,11 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      'event': 'wppPopUpForm'
+    })
+
     emailjs.send('service_smj5mqj', 'template_n6rxz3f', {
       from_name: form.name,
       to_name: 'Carlos',
