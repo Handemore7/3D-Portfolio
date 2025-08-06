@@ -7,7 +7,7 @@
     "selectLanguage": "Select language",
     "home": "Home",
     "about": "About",
-    "experience": "Experience",
+  
     "work": "Works",
     "contact": "Contact"
   },
@@ -24,7 +24,42 @@
   },
   "experience": {
     "title": "Work Experience.",
-    "subtitle": "What I have done so far"
+    "subtitle": "What I have done so far",
+    "0": {
+      "title": "Front-end Developer",
+      "company_name": "Confiabogado",
+      "date": "Jun 2023 - Aug 2025",
+      "intro": "Increased client acquisition and retention by 20% through web platform optimization and new digital services, adapting solutions and technologies to emerging startup needs.",
+      "point0": "Implemented design improvements and form optimizations on the website, achieving a 20% increase in leads in 4 months",
+      "point1": "Led the development of a parallel project, offering users tools like a CV creator and a job hub, increasing user lifetime in our services by 25%.",
+      "point2": "Managed and integrated analytics tools such as Google Tag Manager, Microsoft Clarity, Facebook Pixel, and Google Ads for tracking key metrics.",
+      "point3": "Quick adaptation to new technologies to respond to business challenges and needs, showing flexibility and continuous learning in demanding environments."
+    },
+    "1": {
+      "title": "FullStack Developer",
+      "company_name": "Agriglobal Market",
+      "date": "Nov 2022 - May 2023",
+      "intro": "Improved shopping experience and operational efficiency in agricultural e-commerce through backend optimization and key interface updates.",
+      "point0": "Optimized backend processes and revamped several e-commerce screens, enabling users to complete purchases 10% faster.",
+      "point1": "Implemented a web architecture improvement, facilitating faster and safer navigation for clients."
+    },
+    "2": {
+      "title": "Software developer",
+      "company_name": "Qentaz",
+      "date": "Dec 2021 - May 2022",
+      "intro": "Automated internal processes and developed AI solutions to reduce manual tasks and improve team efficiency.",
+      "point0": "Automated internal processes, improving communication and eliminating repetitive manual actions, increasing team productivity.",
+      "point1": "Implemented an AI bot for automatic transaction classification, speeding up data processing and analysis."
+    },
+    "3": {
+      "title": "Developer / Scrum Master",
+      "company_name": "Banco W",
+      "date": "Jul 2020 - Dec 2020",
+      "intro": "Identified key insights by managing large databases and developing web solutions, applying agile methodologies in a real client environment.",
+      "point0": "Led the development team in managing and interpreting databases, using neural networks to extract relevant insights for the project.",
+      "point1": "Coordinated, developed, and delivered a functional demo website, applying agile/Scrum methodologies in all project phases.",
+      "point2": "Presented results and recommendations to the client, contributing to strategic decision-making."
+    }
   },
   "works": {
     "title": "Projects.",
@@ -73,43 +108,6 @@
     "figma": "figma",
     "photoshop": "Photoshop",
     "premiere": "Premiere"
-  },
-  "experience": {
-    "0": {
-      "title": "Front-end Developer",
-      "company_name": "Confiabogado",
-      "date": "Jun 2023 - Aug 2025",
-      "intro": "Increased client acquisition and retention by 20% through web platform optimization and new digital services, adapting solutions and technologies to emerging startup needs.",
-      "point0": "Implemented design improvements and form optimizations on the website, achieving a 20% increase in leads in 4 months",
-      "point1": "Led the development of a parallel project, offering users tools like a CV creator and a job hub, increasing user lifetime in our services by 25%.",
-      "point2": "Managed and integrated analytics tools such as Google Tag Manager, Microsoft Clarity, Facebook Pixel, and Google Ads for tracking key metrics.",
-      "point3": "Quick adaptation to new technologies to respond to business challenges and needs, showing flexibility and continuous learning in demanding environments."
-    },
-    "1": {
-      "title": "FullStack Developer",
-      "company_name": "Agriglobal Market",
-      "date": "Nov 2022 - May 2023",
-      "intro": "Improved shopping experience and operational efficiency in agricultural e-commerce through backend optimization and key interface updates.",
-      "point0": "Optimized backend processes and revamped several e-commerce screens, enabling users to complete purchases 10% faster.",
-      "point1": "Implemented a web architecture improvement, facilitating faster and safer navigation for clients."
-    },
-    "2": {
-      "title": "Software developer",
-      "company_name": "Qentaz",
-      "date": "Dec 2021 - May 2022",
-      "intro": "Automated internal processes and developed AI solutions to reduce manual tasks and improve team efficiency.",
-      "point0": "Automated internal processes, improving communication and eliminating repetitive manual actions, increasing team productivity.",
-      "point1": "Implemented an AI bot for automatic transaction classification, speeding up data processing and analysis."
-    },
-    "3": {
-      "title": "Developer / Scrum Master",
-      "company_name": "Banco W",
-      "date": "Jul 2020 - Dec 2020",
-      "intro": "Identified key insights by managing large databases and developing web solutions, applying agile methodologies in a real client environment.",
-      "point0": "Led the development team in managing and interpreting databases, using neural networks to extract relevant insights for the project.",
-      "point1": "Coordinated, developed, and delivered a functional demo website, applying agile/Scrum methodologies in all project phases.",
-      "point2": "Presented results and recommendations to the client, contributing to strategic decision-making."
-    }
   },
   "projects": {
     "0": {

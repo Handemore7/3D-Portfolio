@@ -88,8 +88,8 @@ const Experience = () => {
     <>
       {/* Section header */}
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>{t('experience.subtitle')}</p>
-        <h2 className={styles.sectionHeadText}>{t('experience.title')}</h2>
+        <p className={styles.sectionSubText}>{t('experience.subtitle') || ' '}</p>
+        <h2 className={styles.sectionHeadText}>{t('experience.title') || ' '}</h2>
       </motion.div>
 
       {/* Timeline container */}

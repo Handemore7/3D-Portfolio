@@ -7,7 +7,7 @@
     "selectLanguage": "Seleccionar idioma",
     "home": "Inicio",
     "about": "Sobre mí",
-    "experience": "Experiencia",
+  
     "work": "Proyectos",
     "contact": "Contacto"
   },
@@ -24,7 +24,42 @@
   },
   "experience": {
     "title": "Experiencia laboral.",
-    "subtitle": "Lo que he hecho hasta ahora"
+    "subtitle": "Lo que he hecho hasta ahora",
+    "0": {
+      "title": "Desarrollador Front-end",
+      "company_name": "Confiabogado",
+      "date": "Jun 2023 - Ago 2025",
+      "intro": "Se incrementó en un 20% la captación y retención de clientes mediante la optimización de la plataforma web y el desarrollo de nuevos servicios digitales, adaptando soluciones y tecnologías según las necesidades emergentes de la startup.",
+      "point0": "Implementación de mejoras de diseño y optimización de formularios en la página web, logrando un aumento del 20% en leads en 4 meses",
+      "point1": "Se lideró el desarrollo de un proyecto paralelo, ofreciendo a los usuarios herramientas como creador de CV y un hub de empleos, incrementando el tiempo de vida de los usuarios en nuestros servicios en un 25%.",
+      "point2": "Gestion e integración de conexiones con herramientas de analítica como Google Tag Manager, Microsoft Clarity, Facebook Pixel y Google Ads para el seguimiento de métricas clave.",
+      "point3": "Adaptación rápida a nuevas tecnologías para responder a desafíos y necesidades emergentes del negocio, mostrando flexibilidad y aprendizaje continuo en entornos de alta exigencia."
+    },
+    "1": {
+      "title": "Desarrollador FullStack",
+      "company_name": "Agriglobal Market",
+      "date": "Nov 2022 - May 2023",
+      "intro": "Se mejoró la experiencia de compra y la eficiencia operativa en el e-commerce agrícola a través de la optimización del backend y la actualización de interfaces clave.",
+      "point0": "Optimización de procesos en el backend y renovación de varias pantallas del e-commerce, logrando que los usuarios completaran sus compras un 10% más rápido.",
+      "point1": "Se implementó una mejora de la arquitectura web, facilitando una navegación más ágil y segura para los clientes."
+    },
+    "2": {
+      "title": "Software developer",
+      "company_name": "Qentaz",
+      "date": "Dec 2021 - May 2022",
+      "intro": "Automatizar procesos internos y desarrollar soluciones de inteligencia artificial para reducir tareas manuales y mejorar la eficiencia del equipo.",
+      "point0": "Automatización de procesos internos, mejorando la comunicación y eliminando acciones manuales repetitivas, aumentando la productividad del equipo.",
+      "point1": "Implementación de un bot con IA para la clasificación automática de transacciones, agilizando el procesamiento y análisis de datos."
+    },
+    "3": {
+      "title": "Desarrollador / Scrum Master",
+      "company_name": "Banco W",
+      "date": "Jul 2020 - Dic 2020",
+      "intro": "Identificar insights clave mediante el manejo de grandes bases de datos y el desarrollo de soluciones web, aplicando metodologías ágiles en un entorno real con cliente.",
+      "point0": "Lider del equipo de desarrollo en la gestión e interpretación de bases de datos, utilizando redes neuronales para extraer insights relevantes para el proyecto.",
+      "point1": "Coordinación, desarrollo y entrega de una página web demo funcional, aplicando metodologías ágiles/Scrum en todas las fases del proyecto.",
+      "point2": "Presentación de resultados y recomendaciones al cliente, contribuyendo a la toma de decisiones estratégica."
+    }
   },
   "works": {
     "title": "Proyectos.",
@@ -73,43 +108,6 @@
     "figma": "figma",
     "photoshop": "Photoshop",
     "premiere": "Premiere"
-  },
-  "experience": {
-    "0": {
-      "title": "Desarrollador Front-end",
-      "company_name": "Confiabogado",
-      "date": "Jun 2023 - Ago 2025",
-      "intro": "Se incrementó en un 20% la captación y retención de clientes mediante la optimización de la plataforma web y el desarrollo de nuevos servicios digitales, adaptando soluciones y tecnologías según las necesidades emergentes de la startup.",
-      "point0": "Implementación de mejoras de diseño y optimización de formularios en la página web, logrando un aumento del 20% en leads en 4 meses",
-      "point1": "Se lideró el desarrollo de un proyecto paralelo, ofreciendo a los usuarios herramientas como creador de CV y un hub de empleos, incrementando el tiempo de vida de los usuarios en nuestros servicios en un 25%.",
-      "point2": "Gestion e integración de conexiones con herramientas de analítica como Google Tag Manager, Microsoft Clarity, Facebook Pixel y Google Ads para el seguimiento de métricas clave.",
-      "point3": "Adaptación rápida a nuevas tecnologías para responder a desafíos y necesidades emergentes del negocio, mostrando flexibilidad y aprendizaje continuo en entornos de alta exigencia."
-    },
-    "1": {
-      "title": "Desarrollador FullStack",
-      "company_name": "Agriglobal Market",
-      "date": "Nov 2022 - May 2023",
-      "intro": "Se mejoró la experiencia de compra y la eficiencia operativa en el e-commerce agrícola a través de la optimización del backend y la actualización de interfaces clave.",
-      "point0": "Optimización de procesos en el backend y renovación de varias pantallas del e-commerce, logrando que los usuarios completaran sus compras un 10% más rápido.",
-      "point1": "Se implementó una mejora de la arquitectura web, facilitando una navegación más ágil y segura para los clientes."
-    },
-    "2": {
-      "title": "Software developer",
-      "company_name": "Qentaz",
-      "date": "Dic 2021 - May 2022",
-      "intro": "Automatizar procesos internos y desarrollar soluciones de inteligencia artificial para reducir tareas manuales y mejorar la eficiencia del equipo.",
-      "point0": "Automatización de procesos internos, mejorando la comunicación y eliminando acciones manuales repetitivas, aumentando la productividad del equipo.",
-      "point1": "Implementación de un bot con IA para la clasificación automática de transacciones, agilizando el procesamiento y análisis de datos."
-    },
-    "3": {
-      "title": "Desarrollador / Scrum Master",
-      "company_name": "Banco W",
-      "date": "Jul 2020 - Dic 2020",
-      "intro": "Identificar insights clave mediante el manejo de grandes bases de datos y el desarrollo de soluciones web, aplicando metodologías ágiles en un entorno real con cliente.",
-      "point0": "Lider del equipo de desarrollo en la gestión e interpretación de bases de datos, utilizando redes neuronales para extraer insights relevantes para el proyecto.",
-      "point1": "Coordinación, desarrollo y entrega de una página web demo funcional, aplicando metodologías ágiles/Scrum en todas las fases del proyecto.",
-      "point2": "Presentación de resultados y recomendaciones al cliente, contribuyendo a la toma de decisiones estratégica."
-    }
   },
   "projects": {
     "0": {
