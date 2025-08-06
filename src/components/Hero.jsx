@@ -1,4 +1,5 @@
 import React from 'react'
+import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion'
 import { styles } from '../style'
 import { ComputersCanvas } from './canvas'
@@ -33,7 +34,14 @@ const Hero = () => {
       </div>
       
       {/* 3D Computer Canvas - Main visual element */}
-      <ComputersCanvas />
+      {(() => {
+        const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.2 });
+        return (
+          <div ref={ref} style={{ width: '100%', height: '100%' }}>
+            {inView && <ComputersCanvas />}
+          </div>
+        );
+      })()}
 
       {/* Scroll indicator */}
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>

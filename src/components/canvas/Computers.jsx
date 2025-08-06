@@ -39,7 +39,7 @@ const Computers = ({ isMobile }) => {
  * Main Canvas component for the 3D computer
  * Handles responsive behavior and loading states
  */
-const ComputersCanvas = () => {
+const ComputersCanvas = React.memo(() => {
   const [isMobile, setIsMobile] = useState(false)
 
   /**
@@ -85,6 +85,6 @@ const ComputersCanvas = () => {
       <Preload all />
     </Canvas>
   )
-}
+});
 
 export default ComputersCanvas

@@ -8,6 +8,7 @@
  */
 
 import { EarthCanvas, BallCanvas, ComputersCanvas, StarsCanvas } from './canvas'
+import React, { Suspense } from 'react';
 import Hero from './Hero'
 import Navbar from './Navbar'
 import About from './About'
@@ -24,8 +25,8 @@ export {
   Experience,
   Works,
   Contact,
-  EarthCanvas, 
-  BallCanvas, 
-  ComputersCanvas, 
+  EarthCanvas,
+  BallCanvas,
+  ComputersCanvas,
   StarsCanvas
 }

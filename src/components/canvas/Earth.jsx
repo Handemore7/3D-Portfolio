@@ -24,7 +24,7 @@ const Earth = () => {
  * Canvas wrapper for the 3D Earth component
  * Features auto-rotation and optimized camera settings
  */
-const EarthCanvas = () => {
+const EarthCanvas = React.memo(() => {
   return (
     <Canvas 
       shadows 
@@ -61,6 +61,6 @@ const EarthCanvas = () => {
       <Preload all />
     </Canvas>
   )
-}
+});
 
 export default EarthCanvas

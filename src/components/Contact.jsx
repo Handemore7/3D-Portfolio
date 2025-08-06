@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
 import { styles } from '../style'
 import { EarthCanvas } from './canvas'
+import { useInView } from 'react-intersection-observer';
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
 
@@ -213,12 +214,18 @@ const Contact = () => {
       </motion.div>
 
       {/* 3D Earth Canvas */}
-      <motion.div 
-        variants={slideIn('right', 'tween', 0.2, 1)} 
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
-      >
-        <EarthCanvas />
-      </motion.div>
+      {(() => {
+        const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.2 });
+        return (
+          <motion.div 
+            ref={ref}
+            variants={slideIn('right', 'tween', 0.2, 1)} 
+            className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+          >
+            {inView && <EarthCanvas />}
+          </motion.div>
+        );
+      })()}
     </div>
   )
 }

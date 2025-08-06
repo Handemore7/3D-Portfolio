@@ -50,7 +50,7 @@ const Ball = (props) => {
  * @param {Object} props - Component props
  * @param {string} props.icon - Icon/texture path for the ball
  */
-const BallCanvas = ({ icon }) => {
+const BallCanvas = React.memo(({ icon }) => {
   return (
     <Canvas 
       frameloop='demand' 
@@ -69,6 +69,6 @@ const BallCanvas = ({ icon }) => {
       <Preload all />
     </Canvas>
   )
-}
+});
 
 export default BallCanvas
