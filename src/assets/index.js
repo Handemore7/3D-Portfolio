@@ -31,6 +31,8 @@ import agency from './company/agency.png'
 import openai from './openaiProject.jpg'
 import quire from './Quire.jpg'
 import ecommerceTemplate from './EcommerceTemplate.jpg'
+import bancoW from './bancoW.png'
+import confiabogado from './confiabogado.svg'
 
 export {
   logo,
@@ -62,5 +64,7 @@ export {
   agency,
   openai,
   ecommerceTemplate,
-  quire
+  quire,
+  bancoW,
+  confiabogado
 };

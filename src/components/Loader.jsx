@@ -1,5 +1,6 @@
 import React from 'react'
 import { Html, useProgress } from '@react-three/drei'
+import { useTranslation } from 'react-i18next';
 
 /**
  * Loading component for 3D models and canvases
@@ -8,6 +9,7 @@ import { Html, useProgress } from '@react-three/drei'
 const Loader = () => {
   const { progress } = useProgress()
   
+  const { t } = useTranslation();
   return (
     <Html
       as='div'
@@ -39,7 +41,7 @@ const Loader = () => {
           letterSpacing: '0.1em'
         }}
         aria-live="polite"
-        aria-label={`Loading progress: ${progress.toFixed(2)} percent`}
+        aria-label={t('loader.progress', { progress: progress.toFixed(2) })}
       >
         {progress.toFixed(2)}%
       </p>

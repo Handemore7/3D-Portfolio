@@ -2,6 +2,7 @@ import React from 'react'
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion'
 import { styles } from '../style'
+import { useTranslation } from 'react-i18next';
 import { ComputersCanvas } from './canvas'
 
 /**
@@ -9,6 +10,7 @@ import { ComputersCanvas } from './canvas'
  * Features animated elements and responsive design
  */
 const Hero = () => {
+  const { t } = useTranslation();
   return (
     <section className='relative w-full h-screen mx-auto' role="banner">
       {/* Hero content container */}
@@ -23,12 +25,10 @@ const Hero = () => {
         {/* Main hero text */}
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915eff]'>Carlos</span>
+            {t('hero.title')}
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop web applications, 
-            <br className='sm:block hidden'/>
-            UI/UX design, and interactive experiences
+            {t('hero.subtitle')}
           </p>
         </div>
       </div>
@@ -47,7 +47,7 @@ const Hero = () => {
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a 
           href="#about"
-          aria-label="Scroll to about section"
+          aria-label={t('hero.scrollToAbout')}
           className="focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded-full"
         >
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 hover:border-white transition-colors duration-300'>

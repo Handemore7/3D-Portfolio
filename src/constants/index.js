@@ -22,42 +22,44 @@ import {
   agency,
   openai,
   ecommerceTemplate,
-  quire
+  quire,
+  bancoW,
+  confiabogado
 } from "../assets";
 
 export const navLinks = [
   {
     id: "about",
-    title: "About",
+    title: "navbar.about",
   },
   {
     id: "work",
-    title: "Work",
+    title: "navbar.work",
   },
   {
     id: "contact",
-    title: "Contact",
+    title: "navbar.contact",
   },
 ];
 
 const services = [
   {
-    title: "Web Developer",
+    title: "services.webDeveloper",
     icon: web,
     reference: "https://github.com/Handemore7/"
   },
   {
-    title: "UI / UX Designer",
+    title: "services.uiuxDesigner",
     icon: mobile,
     reference: "https://www.behance.net/handemore74403"
   },
   {
-    title: "Data analyst",
+    title: "services.dataAnalyst",
     icon: backend,
     reference: ''
   },
   {
-    title: "Content Creator (editor)",
+    title: "services.contentCreator",
     icon: creator,
     reference: "https://www.youtube.com/@blurelle"
   },
@@ -65,133 +67,132 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
+    name: "tech.html",
     icon: html,
   },
   {
-    name: "CSS 3",
+    name: "tech.css",
     icon: css,
   },
   {
-    name: "JavaScript",
+    name: "tech.javascript",
     icon: javascript,
   },
   {
-    name: "TypeScript",
+    name: "tech.typescript",
     icon: typescript,
   },
   {
-    name: "React JS",
+    name: "tech.react",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
+    name: "tech.redux",
     icon: redux,
   },
   {
-    name: "Tailwind CSS",
+    name: "tech.tailwind",
     icon: tailwind,
   },
   {
-    name: "Node JS",
+    name: "tech.node",
     icon: nodejs,
   },
   {
-    name: "MongoDB",
+    name: "tech.mongodb",
     icon: mongodb,
   },
   {
-    name: "Three JS",
+    name: "tech.threejs",
     icon: threejs,
   },
   {
-    name: "git",
+    name: "tech.git",
     icon: git,
   },
   {
-    name: "figma",
+    name: "tech.figma",
     icon: figma,
   },
   {
-    name: 'photoshop',
+    name: "tech.photoshop",
     icon: photoshop
   },
   {
-    name: 'premiere',
+    name: "tech.premiere",
     icon: premiere
   }
 ];
 
 const experiences = [
   {
-    title: "Desarrollador Front-end",
-    company_name: "Confiabogado",
-    icon: qentaz,
+    title: "experience.0.title",
+    company_name: "experience.0.company_name",
+    icon: confiabogado,
     iconBg: "#E6DEDD",
-    date: "Jun 2023 - Ago 2025",
-    intro: "Se incrementó en un 20% la captación y retención de clientes mediante la optimización de la plataforma web y el desarrollo de nuevos servicios digitales, adaptando soluciones y tecnologías según las necesidades emergentes de la startup. ",
+    date: "experience.0.date",
+    intro: "experience.0.intro",
     points: [
-      "Implementación de mejoras de diseño y optimización de formularios en la página web, logrando un aumento del 20% en leads en 4 meses",
-      "Se lideró el desarrollo de un proyecto paralelo, ofreciendo a los usuarios herramientas como creador de CV y un hub de empleos, incrementando el tiempo de vida de los usuarios en nuestros servicios en un 25%.",
-      "Gestion e integración de conexiones con herramientas de analítica como Google Tag Manager, Microsoft Clarity, Facebook Pixel y Google Ads para el seguimiento de métricas clave.",
-      "Adaptación rápida a nuevas tecnologías para responder a desafíos y necesidades emergentes del negocio, mostrando flexibilidad y aprendizaje continuo en entornos de alta exigencia."
+      "experience.0.point0",
+      "experience.0.point1",
+      "experience.0.point2",
+      "experience.0.point3"
     ],
   },
   {
-    title: "FullStack Developer",
-    company_name: "Agriglobal Market",
+    title: "experience.1.title",
+    company_name: "experience.1.company_name",
     icon: agm,
     iconBg: "#383E56",
-    date: "Nov 2022 - May 2023",
-    intro: "Se mejoró la experiencia de compra y la eficiencia operativa en el e-commerce agrícola a través de la optimización del backend y la actualización de interfaces clave.",
+    date: "experience.1.date",
+    intro: "experience.1.intro",
     points: [
-      "Optimización de procesos en el backend y renovación de varias pantallas del e-commerce, logrando que los usuarios completaran sus compras un 10% más rápido.",
-      "Se implementó una mejora de la arquitectura web, facilitando una navegación más ágil y segura para los clientes.",
+      "experience.1.point0",
+      "experience.1.point1"
     ],
   },
   {
-    title: "Software developer",
-    company_name: "Qentaz",
+    title: "experience.2.title",
+    company_name: "experience.2.company_name",
     icon: qentaz,
     iconBg: "#E6DEDD",
-    date: "Dec 2021 - May 2022",
-    intro: "Automatizar procesos internos y desarrollar soluciones de inteligencia artificial para reducir tareas manuales y mejorar la eficiencia del equipo.",
+    date: "experience.2.date",
+    intro: "experience.2.intro",
     points: [
-      "Automatización de procesos internos, mejorando la comunicación y eliminando acciones manuales repetitivas, aumentando la productividad del equipo.",
-      "Implementación de un bot con IA para la clasificación automática de transacciones, agilizando el procesamiento y análisis de datos.",
+      "experience.2.point0",
+      "experience.2.point1"
     ],
   },
   {
-    title: "Desarrollador / Scrum Master",
-    company_name: "Banco W",
-    icon: qentaz,
-    iconBg: "#E6DEDD",
-    date: "Jul 2020 - Dic 2020",
-    intro: "Identificar insights clave mediante el manejo de grandes bases de datos y el desarrollo de soluciones web, aplicando metodologías ágiles en un entorno real con cliente.",
+    title: "experience.3.title",
+    company_name: "experience.3.company_name",
+    icon: bancoW,
+    iconBg: "#fff",
+    date: "experience.3.date",
+    intro: "experience.3.intro",
     points: [
-      "Lider del equipo de desarrollo en la gestión e interpretación de bases de datos, utilizando redes neuronales para extraer insights relevantes para el proyecto.",
-      "Coordinación, desarrollo y entrega de una página web demo funcional, aplicando metodologías ágiles/Scrum en todas las fases del proyecto.",
-      "Presentación de resultados y recomendaciones al cliente, contribuyendo a la toma de decisiones estratégica.",
+      "experience.3.point0",
+      "experience.3.point1",
+      "experience.3.point2"
     ],
   },
 ];
 
 const projects = [
   {
-    name: "Create images with AI",
-    description:
-      "Web app that is a social network that allows you to create images with openAI api and share them with the rest of the world. All with just a prompt and some clicks",
+    name: "projects.0.name",
+    description: "projects.0.description",
     tags: [
       {
-        name: "Vite",
+        name: "projects.0.tag0",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "projects.0.tag1",
         color: "green-text-gradient",
       },
       {
-        name: "OpenAI",
+        name: "projects.0.tag2",
         color: "pink-text-gradient",
       },
     ],
@@ -200,20 +201,19 @@ const projects = [
     project_link: "https://createimagesai.netlify.app"
   },
   {
-    name: "E-commerce templates",
-    description:
-      "I made various types of templates for E-commerce projects, including payment, shopping cart and product detail",
+    name: "projects.1.name",
+    description: "projects.1.description",
     tags: [
       {
-        name: "Next.js",
+        name: "projects.1.tag0",
         color: "blue-text-gradient",
       },
       {
-        name: "Sanity",
+        name: "projects.1.tag1",
         color: "green-text-gradient",
       },
       {
-        name: "Stripe",
+        name: "projects.1.tag2",
         color: "pink-text-gradient",
       },
     ],
@@ -222,20 +222,19 @@ const projects = [
     project_link: "https://ecommerce-tienda-7537axpgt-handemore7.vercel.app/"
   },
   {
-    name: "Quire",
-    description:
-      "This was a project that I made with my partner Michelle Fernandez as thesis for the university, we created a web app that stimates the UX resources needed in a project.",
+    name: "projects.2.name",
+    description: "projects.2.description",
     tags: [
       {
-        name: "JavaScript",
+        name: "projects.2.tag0",
         color: "blue-text-gradient",
       },
       {
-        name: "AI",
+        name: "projects.2.tag1",
         color: "green-text-gradient",
       },
       {
-        name: "Sort Algorithm",
+        name: "projects.2.tag2",
         color: "pink-text-gradient",
       },
     ],

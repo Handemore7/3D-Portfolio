@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { styles } from '../style'
 import { github, git } from '../assets' 
 import { SectionWrapper } from '../hoc'
+import { useTranslation } from 'react-i18next';
 import { projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 
@@ -41,6 +42,7 @@ const ProjectCard = ({
     }
   }
 
+  const { t } = useTranslation();
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
       <Tilt 
@@ -55,7 +57,7 @@ const ProjectCard = ({
         <div className='relative w-full h-[230px] group'>
           <img 
             src={image} 
-            alt={`${name} project screenshot`} 
+            alt={`${t(name) || name} project screenshot`} 
             className='w-full h-full object-cover rounded-2xl'
             loading="lazy"
           />
@@ -67,12 +69,12 @@ const ProjectCard = ({
               <button
                 onClick={() => handleLinkClick(project_link, 'project')}
                 className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-transform duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50'
-                aria-label={`Visit ${name} live project`}
-                title="View Live Project"
+                aria-label={`Visit ${t(name) || name} live project`}
+                title={t('works.viewLiveProject') || "View Live Project"}
               >
                 <img 
                   src={git} 
-                  alt="Live project" 
+                  alt={t('works.liveProjectAlt') || "Live project"} 
                   className='w-1/2 h-1/2 object-contain'
                 />
               </button>
@@ -83,12 +85,12 @@ const ProjectCard = ({
               <button
                 onClick={() => handleLinkClick(source_code_link, 'source code')}
                 className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-transform duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50'
-                aria-label={`View ${name} source code on GitHub`}
-                title="View Source Code"
+                aria-label={`View ${t(name) || name} source code on GitHub`}
+                title={t('works.viewSourceCode') || "View Source Code"}
               >
                 <img 
                   src={github} 
-                  alt="GitHub repository" 
+                  alt={t('works.githubAlt') || "GitHub repository"} 
                   className='w-1/2 h-1/2 object-contain'
                 />
               </button>
@@ -98,9 +100,9 @@ const ProjectCard = ({
 
         {/* Project details */}
         <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+          <h3 className='text-white font-bold text-[24px]'>{t(name) || name}</h3>
           <p className='mt-2 text-secondary text-[14px] leading-relaxed'>
-            {description}
+            {t(description) || description}
           </p>
         </div>
 
@@ -111,7 +113,7 @@ const ProjectCard = ({
               key={tag.name}
               className={`text-[14px] ${tag.color} bg-opacity-20 bg-gray-800 px-2 py-1 rounded-md`}
             >
-              #{tag.name}
+              #{t(tag.name) || tag.name}
             </span>
           ))}
         </div>
@@ -125,12 +127,13 @@ const ProjectCard = ({
  * Displays portfolio projects in a responsive grid
  */
 const Works = () => {
+  const { t } = useTranslation();
   return (
     <>
       {/* Section header */}
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText}`}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+        <p className={`${styles.sectionSubText}`}>{t('works.subtitle')}</p>
+        <h2 className={`${styles.sectionHeadText}`}>{t('works.title')}</h2>
       </motion.div>
 
       {/* Section description */}
@@ -139,10 +142,7 @@ const Works = () => {
           variants={fadeIn('', '', 0.1, 1)} 
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          I've worked on different types of projects as mentioned in my experience, 
-          but in this section I want to showcase my personal projects where I explore 
-          and learn new technologies. Each project represents a learning journey and 
-          demonstrates various skills from web development to 3D graphics.
+          {t('works.description')}
         </motion.p>
       </div>
 

@@ -1,0 +1,137 @@
+{
+  "navbar": {
+    "logoName": "Carlos",
+    "logoSubtitle": "| Portafolio",
+    "closeMenu": "Cerrar menú",
+    "openMenu": "Abrir menú",
+    "selectLanguage": "Seleccionar idioma",
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "work": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Hola, soy Carlos",
+    "subtitle": "Desarrollo aplicaciones web, diseño UI/UX y experiencias interactivas",
+    "scrollToAbout": "Ir a la sección sobre mí"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "description": "Soy un diseñador multimedia interactivo enfocado principalmente en desarrollo web, aunque también destaco en proyectos de UI/UX. Actualmente me apasiona la IA y la ciencia de datos, aprendiendo constantemente nuevas tecnologías y metodologías. Hablo español e inglés fluidamente y estoy aprendiendo japonés para ampliar mi perspectiva global.",
+    "learnMore": "Saber más sobre {{title}}",
+    "iconAlt": "Icono de {{title}}"
+  },
+  "experience": {
+    "title": "Experiencia laboral.",
+    "subtitle": "Lo que he hecho hasta ahora"
+  },
+  "works": {
+    "title": "Proyectos.",
+    "subtitle": "Mis trabajos",
+    "description": "He trabajado en diferentes tipos de proyectos como menciono en mi experiencia, pero en esta sección quiero mostrar mis proyectos personales donde exploro y aprendo nuevas tecnologías. Cada proyecto representa un viaje de aprendizaje y demuestra diversas habilidades desde desarrollo web hasta gráficos 3D."
+  },
+  "contact": {
+    "title": "Contacto.",
+    "subtitle": "Ponte en contacto",
+    "nameLabel": "Tu nombre",
+    "namePlaceholder": "¿Cuál es tu nombre?",
+    "emailLabel": "Tu correo",
+    "emailPlaceholder": "¿Cuál es tu correo?",
+    "messageLabel": "Tu mensaje",
+    "messagePlaceholder": "¿Qué te gustaría decir?",
+    "sendButton": "Enviar mensaje",
+    "sending": "Enviando...",
+    "success": "¡Gracias! Te responderé lo antes posible.",
+    "error": "Algo salió mal. Por favor intenta de nuevo o contáctame directamente."
+  },
+  "loader": {
+    "progress": "Progreso de carga: {{progress}} por ciento"
+  },
+  "work": {
+    "title": "Experiencia",
+    "description": "Soy un desarrollador apasionado..."
+  },
+  "services": {
+    "webDeveloper": "Desarrollador Web",
+    "uiuxDesigner": "Diseñador UI / UX",
+    "dataAnalyst": "Analista de datos",
+    "contentCreator": "Creador de contenido (editor)"
+  },
+  "tech": {
+    "html": "HTML 5",
+    "css": "CSS 3",
+    "javascript": "JavaScript",
+    "typescript": "TypeScript",
+    "react": "React JS",
+    "redux": "Redux Toolkit",
+    "tailwind": "Tailwind CSS",
+    "node": "Node JS",
+    "mongodb": "MongoDB",
+    "threejs": "Three JS",
+    "git": "git",
+    "figma": "figma",
+    "photoshop": "Photoshop",
+    "premiere": "Premiere"
+  },
+  "experience": {
+    "0": {
+      "title": "Desarrollador Front-end",
+      "company_name": "Confiabogado",
+      "date": "Jun 2023 - Ago 2025",
+      "intro": "Se incrementó en un 20% la captación y retención de clientes mediante la optimización de la plataforma web y el desarrollo de nuevos servicios digitales, adaptando soluciones y tecnologías según las necesidades emergentes de la startup.",
+      "point0": "Implementación de mejoras de diseño y optimización de formularios en la página web, logrando un aumento del 20% en leads en 4 meses",
+      "point1": "Se lideró el desarrollo de un proyecto paralelo, ofreciendo a los usuarios herramientas como creador de CV y un hub de empleos, incrementando el tiempo de vida de los usuarios en nuestros servicios en un 25%.",
+      "point2": "Gestion e integración de conexiones con herramientas de analítica como Google Tag Manager, Microsoft Clarity, Facebook Pixel y Google Ads para el seguimiento de métricas clave.",
+      "point3": "Adaptación rápida a nuevas tecnologías para responder a desafíos y necesidades emergentes del negocio, mostrando flexibilidad y aprendizaje continuo en entornos de alta exigencia."
+    },
+    "1": {
+      "title": "Desarrollador FullStack",
+      "company_name": "Agriglobal Market",
+      "date": "Nov 2022 - May 2023",
+      "intro": "Se mejoró la experiencia de compra y la eficiencia operativa en el e-commerce agrícola a través de la optimización del backend y la actualización de interfaces clave.",
+      "point0": "Optimización de procesos en el backend y renovación de varias pantallas del e-commerce, logrando que los usuarios completaran sus compras un 10% más rápido.",
+      "point1": "Se implementó una mejora de la arquitectura web, facilitando una navegación más ágil y segura para los clientes."
+    },
+    "2": {
+      "title": "Software developer",
+      "company_name": "Qentaz",
+      "date": "Dic 2021 - May 2022",
+      "intro": "Automatizar procesos internos y desarrollar soluciones de inteligencia artificial para reducir tareas manuales y mejorar la eficiencia del equipo.",
+      "point0": "Automatización de procesos internos, mejorando la comunicación y eliminando acciones manuales repetitivas, aumentando la productividad del equipo.",
+      "point1": "Implementación de un bot con IA para la clasificación automática de transacciones, agilizando el procesamiento y análisis de datos."
+    },
+    "3": {
+      "title": "Desarrollador / Scrum Master",
+      "company_name": "Banco W",
+      "date": "Jul 2020 - Dic 2020",
+      "intro": "Identificar insights clave mediante el manejo de grandes bases de datos y el desarrollo de soluciones web, aplicando metodologías ágiles en un entorno real con cliente.",
+      "point0": "Lider del equipo de desarrollo en la gestión e interpretación de bases de datos, utilizando redes neuronales para extraer insights relevantes para el proyecto.",
+      "point1": "Coordinación, desarrollo y entrega de una página web demo funcional, aplicando metodologías ágiles/Scrum en todas las fases del proyecto.",
+      "point2": "Presentación de resultados y recomendaciones al cliente, contribuyendo a la toma de decisiones estratégica."
+    }
+  },
+  "projects": {
+    "0": {
+      "name": "Crear imágenes con IA",
+      "description": "Aplicación web que es una red social que te permite crear imágenes con la API de OpenAI y compartirlas con el resto del mundo. Todo con solo un prompt y unos clics.",
+      "tag0": "Vite",
+      "tag1": "MongoDB",
+      "tag2": "OpenAI"
+    },
+    "1": {
+      "name": "Plantillas E-commerce",
+      "description": "Realicé varios tipos de plantillas para proyectos de E-commerce, incluyendo pago, carrito de compras y detalle de producto.",
+      "tag0": "Next.js",
+      "tag1": "Sanity",
+      "tag2": "Stripe"
+    },
+    "2": {
+      "name": "Quire",
+      "description": "Este fue un proyecto que realicé con mi compañera Michelle Fernández como tesis para la universidad, creamos una aplicación web que estima los recursos UX necesarios en un proyecto.",
+      "tag0": "JavaScript",
+      "tag1": "IA",
+      "tag2": "Algoritmo de ordenamiento"
+    }
+  }
+}

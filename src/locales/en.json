@@ -1,0 +1,137 @@
+{
+  "navbar": {
+    "logoName": "Carlos",
+    "logoSubtitle": "| Portfolio",
+    "closeMenu": "Close menu",
+    "openMenu": "Open menu",
+    "selectLanguage": "Select language",
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "work": "Works",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Hi, I'm Carlos",
+    "subtitle": "I develop web applications, UI/UX design, and interactive experiences",
+    "scrollToAbout": "Scroll to about section"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I'm an interactive multimedia designer with a primary focus on web development, though I excel in UI/UX projects as well. Currently, I'm passionate about AI and data science, constantly learning new technologies and methodologies. I'm multilingual, speaking Spanish and English fluently, and I'm currently learning Japanese to expand my global perspective.",
+    "learnMore": "Learn more about {{title}}",
+    "iconAlt": "{{title}} icon"
+  },
+  "experience": {
+    "title": "Work Experience.",
+    "subtitle": "What I have done so far"
+  },
+  "works": {
+    "title": "Projects.",
+    "subtitle": "My work",
+    "description": "I've worked on different types of projects as mentioned in my experience, but in this section I want to showcase my personal projects where I explore and learn new technologies. Each project represents a learning journey and demonstrates various skills from web development to 3D graphics."
+  },
+  "contact": {
+    "title": "Contact.",
+    "subtitle": "Get in touch",
+    "nameLabel": "Your Name",
+    "namePlaceholder": "What's your name?",
+    "emailLabel": "Your Email",
+    "emailPlaceholder": "What's your email?",
+    "messageLabel": "Your Message",
+    "messagePlaceholder": "What would you like to say?",
+    "sendButton": "Send Message",
+    "sending": "Sending...",
+    "success": "Thank you! I will get back to you as soon as possible.",
+    "error": "Something went wrong. Please try again or contact me directly."
+  },
+  "loader": {
+    "progress": "Loading progress: {{progress}} percent"
+  },
+  "work": {
+    "title": "Experience",
+    "description": "I am a passionate developer..."
+  },
+  "services": {
+    "webDeveloper": "Web Developer",
+    "uiuxDesigner": "UI / UX Designer",
+    "dataAnalyst": "Data analyst",
+    "contentCreator": "Content Creator (editor)"
+  },
+  "tech": {
+    "html": "HTML 5",
+    "css": "CSS 3",
+    "javascript": "JavaScript",
+    "typescript": "TypeScript",
+    "react": "React JS",
+    "redux": "Redux Toolkit",
+    "tailwind": "Tailwind CSS",
+    "node": "Node JS",
+    "mongodb": "MongoDB",
+    "threejs": "Three JS",
+    "git": "git",
+    "figma": "figma",
+    "photoshop": "Photoshop",
+    "premiere": "Premiere"
+  },
+  "experience": {
+    "0": {
+      "title": "Front-end Developer",
+      "company_name": "Confiabogado",
+      "date": "Jun 2023 - Aug 2025",
+      "intro": "Increased client acquisition and retention by 20% through web platform optimization and new digital services, adapting solutions and technologies to emerging startup needs.",
+      "point0": "Implemented design improvements and form optimizations on the website, achieving a 20% increase in leads in 4 months",
+      "point1": "Led the development of a parallel project, offering users tools like a CV creator and a job hub, increasing user lifetime in our services by 25%.",
+      "point2": "Managed and integrated analytics tools such as Google Tag Manager, Microsoft Clarity, Facebook Pixel, and Google Ads for tracking key metrics.",
+      "point3": "Quick adaptation to new technologies to respond to business challenges and needs, showing flexibility and continuous learning in demanding environments."
+    },
+    "1": {
+      "title": "FullStack Developer",
+      "company_name": "Agriglobal Market",
+      "date": "Nov 2022 - May 2023",
+      "intro": "Improved shopping experience and operational efficiency in agricultural e-commerce through backend optimization and key interface updates.",
+      "point0": "Optimized backend processes and revamped several e-commerce screens, enabling users to complete purchases 10% faster.",
+      "point1": "Implemented a web architecture improvement, facilitating faster and safer navigation for clients."
+    },
+    "2": {
+      "title": "Software developer",
+      "company_name": "Qentaz",
+      "date": "Dec 2021 - May 2022",
+      "intro": "Automated internal processes and developed AI solutions to reduce manual tasks and improve team efficiency.",
+      "point0": "Automated internal processes, improving communication and eliminating repetitive manual actions, increasing team productivity.",
+      "point1": "Implemented an AI bot for automatic transaction classification, speeding up data processing and analysis."
+    },
+    "3": {
+      "title": "Developer / Scrum Master",
+      "company_name": "Banco W",
+      "date": "Jul 2020 - Dec 2020",
+      "intro": "Identified key insights by managing large databases and developing web solutions, applying agile methodologies in a real client environment.",
+      "point0": "Led the development team in managing and interpreting databases, using neural networks to extract relevant insights for the project.",
+      "point1": "Coordinated, developed, and delivered a functional demo website, applying agile/Scrum methodologies in all project phases.",
+      "point2": "Presented results and recommendations to the client, contributing to strategic decision-making."
+    }
+  },
+  "projects": {
+    "0": {
+      "name": "Create images with AI",
+      "description": "Web app that is a social network that allows you to create images with openAI api and share them with the rest of the world. All with just a prompt and some clicks",
+      "tag0": "Vite",
+      "tag1": "MongoDB",
+      "tag2": "OpenAI"
+    },
+    "1": {
+      "name": "E-commerce templates",
+      "description": "I made various types of templates for E-commerce projects, including payment, shopping cart and product detail",
+      "tag0": "Next.js",
+      "tag1": "Sanity",
+      "tag2": "Stripe"
+    },
+    "2": {
+      "name": "Quire",
+      "description": "This was a project that I made with my partner Michelle Fernandez as thesis for the university, we created a web app that estimates the UX resources needed in a project.",
+      "tag0": "JavaScript",
+      "tag1": "AI",
+      "tag2": "Sort Algorithm"
+    }
+  }
+}

@@ -6,6 +6,7 @@ import 'react-vertical-timeline-component/style.min.css'
 import { styles } from '../style'
 import { experiences } from '../constants'
 import { SectionWrapper } from '../hoc'
+import { useTranslation } from 'react-i18next';
 import { textVariant } from '../utils/motion'
 
 /**
@@ -18,73 +19,77 @@ import { textVariant } from '../utils/motion'
  * @param {string} experience.icon - Company/role icon
  * @param {Array} experience.points - Array of achievement/responsibility points
  */
-const ExperienceCard = ({ experience }) => (
-  <VerticalTimelineElement
-    contentStyle={{
-      background: '#1d1836',
-      color: '#fff',
-      boxShadow: '0 3px 10px rgba(0, 0, 0, 0.3)',
-      border: '1px solid #232631'
-    }}
-    contentArrowStyle={{
-      borderRight: '7px solid #232631'
-    }}
-    date={experience.date}
-    iconStyle={{
-      background: experience.iconBg,
-      color: '#fff'
-    }}
-    icon={
-      <div className='flex justify-center items-center w-full h-full'>
-        <img
-          src={experience.icon}
-          alt={`${experience.company_name} logo`}
-          className='w-[60%] h-[60%] object-contain'
-          loading="lazy"
-        />
-      </div>
-    }
-  >
-    {/* Job title and company */}
-    <div>
-      <h3 className='text-white text-[24px] font-bold'>
-        {experience.title}
-      </h3>
-      <p
-        className='text-secondary text-[16px] font-semibold'
-        style={{ margin: 0 }}
-      >
-        {experience.company_name}
-      </p>
-    </div>
-    <p>
-      {experience.intro || ''}
-    </p>
-    {/* Achievement/responsibility points */}
-    <ul className='mt-5 list-disc ml-5 space-y-2'>
-      {experience.points.map((point, index) => (
-        <li
-          key={`experience-point-${index}`}
-          className='text-white-100 text-[14px] pl-1 tracking-wider leading-relaxed'
+const ExperienceCard = ({ experience }) => {
+  const { t } = useTranslation();
+  return (
+    <VerticalTimelineElement
+      contentStyle={{
+        background: '#1d1836',
+        color: '#fff',
+        boxShadow: '0 3px 10px rgba(0, 0, 0, 0.3)',
+        border: '1px solid #232631'
+      }}
+      contentArrowStyle={{
+        borderRight: '7px solid #232631'
+      }}
+      date={t(experience.date) || experience.date}
+      iconStyle={{
+        background: experience.iconBg,
+        color: '#fff'
+      }}
+      icon={
+        <div className='flex justify-center items-center w-full h-full'>
+          <img
+            src={experience.icon}
+            alt={`${experience.company_name} logo`}
+            className='w-[60%] h-[60%] object-contain'
+            loading="lazy"
+          />
+        </div>
+      }
+    >
+      {/* Job title and company */}
+      <div>
+        <h3 className='text-white text-[24px] font-bold'>
+          {t(experience.title) || experience.title}
+        </h3>
+        <p
+          className='text-secondary text-[16px] font-semibold'
+          style={{ margin: 0 }}
         >
-          {point}
-        </li>
-      ))}
-    </ul>
-  </VerticalTimelineElement>
-)
+          {t(experience.company_name) || experience.company_name}
+        </p>
+      </div>
+      <p>
+        {t(experience.intro) || experience.intro || ''}
+      </p>
+      {/* Achievement/responsibility points */}
+      <ul className='mt-5 list-disc ml-5 space-y-2'>
+        {experience.points.map((point, index) => (
+          <li
+            key={`experience-point-${index}`}
+            className='text-white-100 text-[14px] pl-1 tracking-wider leading-relaxed'
+          >
+            {t(point) || point}
+          </li>
+        ))}
+      </ul>
+    </VerticalTimelineElement>
+  );
+}
 
 /**
  * Experience section component
  * Displays work experience in a vertical timeline format
  */
 const Experience = () => {
+  const { t } = useTranslation();
   return (
     <>
       {/* Section header */}
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>What I have done so far</p>
-        <h2 className={styles.sectionHeadText}>Work Experience.</h2>
+        <p className={styles.sectionSubText}>{t('experience.subtitle')}</p>
+        <h2 className={styles.sectionHeadText}>{t('experience.title')}</h2>
       </motion.div>
 
       {/* Timeline container */}

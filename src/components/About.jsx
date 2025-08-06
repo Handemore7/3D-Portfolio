@@ -5,6 +5,7 @@ import { styles } from '../style'
 import { services } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 import { SectionWrapper } from '../hoc'
+import { useTranslation } from 'react-i18next';
 
 /**
  * Individual service card component with 3D tilt effect
@@ -23,6 +24,7 @@ const ServiceCard = ({ index, title, icon, reference }) => {
     }
   }
 
+  const { t } = useTranslation();
   return (
     <Tilt 
       className='xs:w-[250px] w-full'
@@ -47,16 +49,16 @@ const ServiceCard = ({ index, title, icon, reference }) => {
           className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col cursor-pointer transition-transform duration-300 group-hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50'
           role="button"
           tabIndex={reference ? 0 : -1}
-          aria-label={`Learn more about ${title}`}
+          aria-label={t('about.learnMore', { title })}
         >
           <img 
             src={icon} 
-            alt={`${title} icon`} 
+            alt={t('about.iconAlt', { title })} 
             className='w-16 h-16 object-contain'
             loading="lazy"
           />
           <h3 className='text-white text-[20px] font-bold text-center'>
-            {title}
+            {t(title) || title}
           </h3>
         </div>
       </motion.div>
@@ -69,12 +71,13 @@ const ServiceCard = ({ index, title, icon, reference }) => {
  * Displays personal introduction and service offerings
  */
 const About = () => {
+  const { t } = useTranslation();
   return (
     <>
       {/* Section header */}
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className={styles.sectionSubText}>{t('about.title')}</p>
+        <h2 className={styles.sectionHeadText}>{t('about.title')}</h2>
       </motion.div>
 
       {/* Personal description */}
@@ -82,11 +85,7 @@ const About = () => {
         variants={fadeIn('', '', 0.1, 1)} 
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm an interactive multimedia designer with a primary focus on web development, 
-        though I excel in UI/UX projects as well. Currently, I'm passionate about 
-        AI and data science, constantly learning new technologies and methodologies. 
-        I'm multilingual, speaking Spanish and English fluently, and I'm currently 
-        learning Japanese to expand my global perspective.
+        {t('about.description')}
       </motion.p>
 
       {/* Services grid */}
